@@ -1,17 +1,22 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php
-        // put your code here
-        ?>
-    </body>
-</html>
+<?php
+    class Permission {
+        public $conn;
+        public function __constant($conn)
+        {
+            $this->conn = $conn;
+        }
+        public function protect($rdr)
+        {
+            $conn = $this->conn;
+            if (isset($_SESSION['user_id']) {
+                header('Location:' . $rdr);
+            } else {
+                header('Location:' . $rdr);
+            }
+        }
+    }
+    $protect = new Permission($conn);
+    // Add a redirect in "$rdr" or leave NULL
+    $rdr = "NULL";
+    $protect->protect($rdr);
+?>
