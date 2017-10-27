@@ -22,11 +22,10 @@ class GetDropdowns extends Database {
         $stateQuery = $conn->query($sqlQuery);
         while ($stateData = $stateQuery->fetch_object()) {
             echo '<option value="'.$stateData->id.'">' . $stateData->state_name . '</option>';
-           
+
         }
     }
 
 }
 
 $runDropdowns = new GetDropdowns();
-
