@@ -19,6 +19,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $db = "tutorking";
+$baseURL = "http://localhost/tutorking/";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $db);
