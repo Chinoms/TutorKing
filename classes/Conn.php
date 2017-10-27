@@ -1,6 +1,6 @@
 <?php
 
-/*
+/* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -17,9 +17,9 @@ $conn = new mysqli($server, $user, $password, $dbName);
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "root";
+$password = "";
 $db = "tutorking";
-$baseURL = "http://localhost:8888/tutorking/";
+$baseURL = "http://localhost/tutorking/";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $db);
