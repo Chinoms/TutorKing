@@ -3,7 +3,7 @@
 require 'Database.php';
 
 /**
-  The purpose of this class is to fetch data from
+ * The purpose of this class is to fetch data from
  * database tables and populate dropdowns
  *
  * @author Chinoms
@@ -22,11 +22,10 @@ class GetDropdowns extends Database {
         $stateQuery = $conn->query($sqlQuery);
         while ($stateData = $stateQuery->fetch_object()) {
             echo '<option value="'.$stateData->id.'">' . $stateData->state_name . '</option>';
-           
+
         }
     }
 
 }
 
 $runDropdowns = new GetDropdowns();
-
